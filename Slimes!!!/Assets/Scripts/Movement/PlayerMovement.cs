@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -40,6 +41,24 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+
+        Debug.Log(m_CurrentMoveInput);
+        if (m_CurrentMoveInput > Mathf.Epsilon)
+        {
+            GetComponentInChildren<SpriteRenderer>().flipX = true;
+        }
+        else if (m_CurrentMoveInput < Mathf.Epsilon)
+        {
+            GetComponentInChildren<SpriteRenderer>().flipX = false;
+        }
+        if (Mathf.Abs(m_CurrentMoveInput) > 0.1f)
+        {
+            GetComponent<Animator>().SetBool("moving", true);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("moving", false);
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)
