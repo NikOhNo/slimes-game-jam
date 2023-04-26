@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Build/Menu.unity
     guid: 7b62d17a48b7bd94687d6d4dd16870ed
   - enabled: 1
-    path: Assets/Scenes/Final Build/Gameplay.unity
-    guid: 0d6dd55fc30d7764eb18ab12b651ba9a
+    path: Assets/Scenes/Final Build/Village.unity
+    guid: 19e70eabf6283e44b8d05dec014a559b
+  - enabled: 1
+    path: Assets/Scenes/Final Build/OutsideVillage.unity
+    guid: 28929c77305298a4ca56fc6fd6e0fe37
+  - enabled: 1
+    path: Assets/Scenes/Final Build/Continue.unity
+    guid: 07a0b7d5ebf32ab45a8efba9018a9620
+  - enabled: 1
+    path: Assets/Scenes/Final Build/BossDoor.unity
+    guid: a368fe98dc12c14429ee3209b72a70cf
   - enabled: 1
     path: Assets/Scenes/Final Build/Credits.unity
     guid: 88decdd198005d9429f4e1a60949dfea

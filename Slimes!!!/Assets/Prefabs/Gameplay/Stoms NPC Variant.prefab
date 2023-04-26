@@ -65,11 +65,19 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 8a9a566d093998f43936ed7adf06d011, type: 2}
     - target: {fileID: 3065312013520760467, guid: e7d1c5e2adb62804e8d8328854e63a8f, type: 3}
       propertyPath: m_Name
-      value: Stoms
+      value: Stoms NPC Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3065312015147771490, guid: e7d1c5e2adb62804e8d8328854e63a8f, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8ea8572bc537d244e98d340b0a50869c, type: 3}
+    - target: {fileID: 7703681290370780644, guid: e7d1c5e2adb62804e8d8328854e63a8f, type: 3}
+      propertyPath: dialogue.characterName
+      value: Stoms
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703681290370780644, guid: e7d1c5e2adb62804e8d8328854e63a8f, type: 3}
+      propertyPath: dialogue.characterImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 53bf49c0fee49544b95bfa096befcaac, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d1c5e2adb62804e8d8328854e63a8f, type: 3}

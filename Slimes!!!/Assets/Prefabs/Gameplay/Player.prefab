@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 5000627826432182080}
   - component: {fileID: 5000627826432182082}
   - component: {fileID: 5000627826432182085}
+  - component: {fileID: 264217705404609379}
   - component: {fileID: 5000627826432182083}
   - component: {fileID: 5000627826432182207}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,19 @@ MonoBehaviour:
     m_ActionId: 443cb106-7fc8-4640-96a6-7d9c13546914
     m_ActionName: Player/Look[/Mouse/delta,/Pen/delta,/Device Simulator Touchscreen/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 264217705404609379}
+        m_TargetAssemblyTypeName: PlayerInteractions, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: bd207fb1-57c7-405c-865a-895189c4835f
     m_ActionName: Player/Grab[/Mouse/leftButton,/Device Simulator Touchscreen/primaryTouch/tap]
   - m_PersistentCalls:
@@ -166,6 +179,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &264217705404609379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5000627826432182204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a430b0e1d0b29744a9fa6611c8e2f143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactArea: {fileID: 5000627827260758641}
 --- !u!114 &5000627826432182083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,8 +300,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2011522723
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 75417130c6a4fb7488d0398650a6aa06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -300,7 +326,7 @@ GameObject:
   - component: {fileID: 5000627827260758641}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

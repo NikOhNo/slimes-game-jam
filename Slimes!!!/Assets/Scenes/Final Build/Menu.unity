@@ -219,6 +219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 547631001, guid: db7835006c63a6c4196e24cd00614194, type: 3}
+      propertyPath: m_text
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 1313362359, guid: db7835006c63a6c4196e24cd00614194, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -231,6 +235,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 995848933}
+    - target: {fileID: 1713823209, guid: db7835006c63a6c4196e24cd00614194, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2414412502857215098, guid: db7835006c63a6c4196e24cd00614194, type: 3}
       propertyPath: m_Name
       value: Base Canvas
